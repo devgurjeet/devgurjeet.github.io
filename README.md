@@ -1,2 +1,1 @@
-# devgurjeet.github.io
-simple webiste
+MY Website

@@ -1,62 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free coming soon template with jQuery countdown">
-    <meta name="author" content="http://bootstraptaste.com">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <title>Shubh Viah | Royal Indian Matrimony</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        shubh: {
+                            indigo: '#0F1C2E',
+                            royal: '#1F3A5F',
+                            gold: '#D4AF37',
+                            sandalwood: '#FFF9F3',
+                            accent: '#E5C9A5',
+                            border: '#E2D1C3',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 
-    <title>Coming Soon</title>
+    <style>
+        body { 
+            background-color: #EAE3D9; 
+            height: 100dvh; 
+            overflow: hidden; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+        /* Indian Jali Pattern Overlay */
+        .jali-texture::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0l20 20-20 20L0 20z' fill='none' stroke='%23d4af37' stroke-opacity='0.08' stroke-width='1'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1;
+        }
 
-    <!-- siimple style -->
-    <link href="assets/css/style.css" rel="stylesheet">
+        .hero-image-render {
+            background-image: url('https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+        }
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
+        .editorial-fade {
+            background: linear-gradient(90deg, #FFF9F3 0%, #FFF9F3 15%, rgba(255, 249, 243, 0) 100%);
+        }
 
-  <body>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="font-sans p-4 md:p-6 jali-texture">
 
-	<div id="wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<h1>Coming Soon</h1>
-					<h2 class="subtitle">We're working hard to improve our website and we'll ready to launch after</h2>
-					<div id="countdown"></div>
-					<form class="form-inline signup" role="form">
-					  <div class="form-group">
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
-					  </div>
-					  <button type="submit" class="btn btn-theme">Get notified!</button>
-					</form>
+    <div class="bg-shubh-sandalwood w-full max-w-7xl h-full lg:h-[90vh] max-h-[850px] rounded-[40px] md:rounded-[56px] overflow-hidden shadow-[0_50px_100px_-20px_rgba(15,28,46,0.3)] flex flex-col lg:flex-row relative border border-white/50 z-10">
+        
+        <div class="w-full lg:w-[58%] p-8 md:p-12 lg:p-16 flex flex-col gap-y-10 overflow-y-auto no-scrollbar relative z-20">
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4">
+                    <span class="text-4xl md:text-5xl font-serif text-shubh-indigo font-bold tracking-tight">Shubh</span>
+                    <div class="relative">
+                        <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" stroke="#D4AF37" stroke-width="1" stroke-dasharray="4 4"/>
+                            <path d="M50 30 C50 30 35 45 35 55 C35 63 42 70 50 70 C58 70 65 63 65 55 C65 45 50 30 50 30Z" fill="#0F1C2E"/>
+                            <circle cx="50" cy="55" r="5" fill="#D4AF37"/>
+                        </svg>
+                    </div>
+                    <span class="text-4xl md:text-5xl font-serif text-shubh-gold font-light italic tracking-tight">Viah</span>
+                </div>
+                <p class="text-[10px] tracking-[0.4em] text-shubh-indigo/50 uppercase font-bold">Rooted in Culture. Designed for You.</p>
+            </div>
 
-				</div>
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-[1.5px] bg-shubh-gold"></span>
+                    <span class="text-shubh-gold tracking-[0.3em] text-[11px] font-black uppercase">Invitation Only</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl lg:text-[68px] font-serif text-shubh-indigo leading-[1.1] font-bold tracking-tight">
+                    Sacred Ties.<br>
+                    <span class="text-shubh-gold italic font-normal">Modern Beginnings.</span>
+                </h1>
+                <p class="text-shubh-indigo/80 text-sm md:text-lg max-w-md leading-relaxed">
+                    A curated matchmaking experience for those who value heritage as much as they value personal compatibility. 
+                </p>
+            </div>
 
-			</div>
-			<div class="row">
-				<div class="col-lg-6 col-lg-offset-3">
-						<p class="copyright">Copyright &copy; 2016. Al rights reserved.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.countdown.min.js"></script>
-	<script type="text/javascript">
-  $('#countdown').countdown('2017/01/01', function(event) {
-    $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'));
-  });
-</script>
-  </body>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="flex flex-col gap-3">
+                    <div class="w-12 h-12 rounded-2xl border border-shubh-gold/20 flex items-center justify-center bg-white shadow-sm">
+                        <svg class="w-6 h-6 text-shubh-indigo" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/></svg>
+                    </div>
+                    <span class="text-[9px] font-bold text-shubh-indigo uppercase tracking-widest leading-tight">Trust<br>Verified</span>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="w-12 h-12 rounded-2xl border border-shubh-gold/20 flex items-center justify-center bg-white shadow-sm">
+                        <svg class="w-6 h-6 text-shubh-indigo" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg>
+                    </div>
+                    <span class="text-[9px] font-bold text-shubh-indigo uppercase tracking-widest leading-tight">Handpicked<br>Matches</span>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="w-12 h-12 rounded-2xl border border-shubh-gold/20 flex items-center justify-center bg-white shadow-sm">
+                        <svg class="w-6 h-6 text-shubh-indigo" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-.778.099-1.533.284-2.253" /></svg>
+                    </div>
+                    <span class="text-[9px] font-bold text-shubh-indigo uppercase tracking-widest leading-tight">Global<br>Reach</span>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <div class="w-12 h-12 rounded-2xl border border-shubh-gold/20 flex items-center justify-center bg-white shadow-sm">
+                        <svg class="w-6 h-6 text-shubh-indigo" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" /></svg>
+                    </div>
+                    <span class="text-[9px] font-bold text-shubh-indigo uppercase tracking-widest leading-tight">Discrete<br>Privacy</span>
+                </div>
+            </div>
+
+            <form class="flex w-full max-w-lg bg-white rounded-2xl p-2 shadow-lg border border-shubh-border/50 focus-within:ring-2 ring-shubh-gold/30 transition-all mt-auto">
+                <input type="email" placeholder="Enter your email" class="flex-grow bg-transparent px-4 text-sm outline-none text-shubh-indigo font-medium placeholder-gray-400" required>
+                <button type="submit" class="bg-shubh-indigo text-shubh-accent px-8 py-4 rounded-xl text-sm font-bold tracking-widest uppercase transition-all hover:bg-shubh-royal active:scale-[0.98]">
+                    Join Circle
+                </button>
+            </form>
+
+            <div class="flex flex-wrap items-center gap-x-8 gap-y-4 text-[10px] text-shubh-indigo/60 font-bold tracking-[0.2em] uppercase">
+                <span>• Premium Lineage</span>
+                <span>• Cultural Alignment</span>
+                <span>• Secure Platform</span>
+            </div>
+        </div>
+
+        <div class="hidden lg:flex lg:w-[42%] relative flex-col justify-between p-12 overflow-hidden bg-shubh-indigo">
+            <div class="absolute inset-0 editorial-fade z-10"></div>
+            <div class="absolute inset-0 hero-image-render z-0 opacity-80 mix-blend-luminosity"></div>
+            
+            <div class="relative z-30 text-right">
+                <p class="text-shubh-indigo text-[11px] tracking-[0.4em] uppercase font-bold mb-2">Connecting hearts, creating homes.</p>
+                <div class="h-px w-12 bg-shubh-gold ml-auto"></div>
+            </div>
+
+            <div class="relative z-30">
+                <h3 class="text-shubh-indigo text-[38px] font-serif leading-[1.1] mb-6">
+                    Honor the Past, <br/>
+                    <span class="italic text-shubh-gold font-light">Build the Future.</span>
+                </h3>
+                <div class="flex items-center gap-4">
+                    <p class="text-shubh-indigo text-[10px] tracking-[0.4em] uppercase font-bold">Noble Connections</p>
+                    <div class="flex-grow h-px bg-shubh-indigo/20"></div>
+                </div>
+            </div>
+
+            <svg class="absolute bottom-[-10%] right-[-10%] w-[300px] h-[300px] z-20 opacity-10 text-shubh-gold" fill="currentColor" viewBox="0 0 100 100">
+                <path d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" />
+            </svg>
+        </div>
+        
+    </div>
+
+    <div class="fixed top-[-10%] left-[-10%] w-[600px] h-[600px] bg-shubh-gold/10 blur-[120px] rounded-full -z-10"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-shubh-indigo/5 blur-[120px] rounded-full -z-10"></div>
+
+</body>
 </html>
